@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='src/newWorld.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <title>Nothing for now</title>
+</head>
+
+<body onload="onLoad({{ prms }})">
+    <div class="main_container">
+        <canvas class="main_canvas"></canvas>
+    </div>
+    <button class="btn" id="share"><i class="fa fa-share"></i></button>
+    <button class="btn" id="donate"><i class="fas fa-hand-holding-usd"></i></button>
+    <div id="snackbar">The share text is copied!</div>
+    <div class="videoCamera">
+        <video class="input_video" style="display: none;"></video>
+        <canvas class="output_canvas"></canvas>
+    </div>
+    <script src="{{ url_for('static',filename='js/newWorld_js/dr_strange_algorithm.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/newWorld_js/positioned_function.js') }}"></script>
+</body>
+</html>
+

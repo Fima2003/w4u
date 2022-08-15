@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Price</title>
+    <link rel="stylesheet" href= "{{ url_for('static',filename='src/donation-button.css') }}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='src/footer.css') }}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='src/header.css') }}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='src/styles.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <div class="header">
+        <h1 id="header-title">The Price <span id="independence">of Independence</span></h1>
+        <button class="donate-btn" id="header-donate"><i class="fa fa-money-bill" id="money-icon"></i><h6>Donate</h6></button>
+    </div>
+    <div class="initial">
+        <div class="big-text">
+            <h1><span id="stop">STOP</span><span id="war"> WAR</span><span id="in"> IN</span> <span id="ukraine">UKRAINE</span></h1>
+        </div>
+        <div class="arrow-box">
+            <button class="arrow-button" id="arrow" role="button">
+                <div id="down-arrow"></div>
+            </button>
+        </div>
+    </div>
+    <div class="secondary">
+        <div class="almost-header">
+            <h1 id="save-cities">
+                Save Cities
+            </h1>
+        </div>
+        <div class="grid-container">
+            {% for grid_element in grid_elements %}
+              <div class="grid-item" id="grid-item{{ grid_elements.index(grid_element) }}" onclick="gridItemClick({{ grid_elements.index(grid_element) }})">
+                  <div class="grid-item-image">
+                      <img src="{{ grid_element['image'] }}">
+                  </div>
+                  <div class="grid-item-footer">
+                      <p class="footer-city">{{ grid_element['city'] }}</p>
+                  </div>
+              </div>
+            {% endfor %}
+            <footer class="main_footer">
+                <div class="tablet footer-column" id="one">
+                    <h1 id="footer-title">The Price <span id="independence">of Independence</span></h1>
+                    <button class="donate-btn" id="footer-donate"><i class="fa fa-money-bill" id="money-icon"></i><h6>Donate</h6></button>
+                </div>
+                <div class="tablet two">
+                    <div class="tblt footer-column" id="two">
+                        <div class="footer-cities">
+                            {% for grid_element in grid_elements %}
+                            <div class="main-footer-city" id="footer-city-item{{ grid_elements.index(grid_element) }}" onclick="gridItemClick({{ grid_elements.index(grid_element) }})">
+                                {{ grid_element['city'] }}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="tblt footer-column" id="three">
+                        <div class="write-to" id="creator">
+                            Write to creators <span id="send-arrow">-></span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='js/index_js/main.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/footer.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/header.js') }}"></script>
+</body>
+</html>

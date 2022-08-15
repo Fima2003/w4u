@@ -1,0 +1,28 @@
+body {
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-box{
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+    left: 25%;
+    background-color: lightgrey;
+    box-shadow: 0 5px 20px;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1{
+    font-size: 100px;
+}
+
+.form-text-field{
+    position: relative;
+    left: 0;
+}

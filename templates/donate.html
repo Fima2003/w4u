@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Price</title>
+    <link rel="stylesheet" href= "{{ url_for('static',filename='src/donation-button.css') }}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='src/footer.css') }}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='src/header.css') }}">
+    <link rel="stylesheet" href= "{{ url_for('static',filename='src/donate.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+</head>
+<body>
+    <div class="header">
+        <h1 id="header-title">The Price <span id="independence">of Independence</span></h1>
+    </div>
+    <div class="primary">
+        <div class="help-text">If you want to help</div>
+        <div class="credentials">
+            <div class="military">
+                <div class="button">
+                    <img src="../static/DB/aid.jpg" id="aid-pic">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="help-info">
+        <div class="col almost-header">
+            <h1 id="save-cities">
+                How We Help
+            </h1>
+        </div>
+        <div class="col">
+            <div class="row-col">
+                <h6>Title</h6>
+                <div class="rc rc-text">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A eget justo diam sit diam malesuada dignissim. Volutpat, facilisis posuere at quis eleifend facilisi porttitor. Leo laoreet ipsum vitae nulla dolor nec blandit metus. Nulla in enim nibh turpis quis ut. Mattis tincidunt volutpat sagittis ultricies vitae feugiat vulputate sit. Ipsum dolor netus praesent tincidunt. Aliquam quis nec, risus amet. Rhoncus pharetra arcu mattis sit auctor et in. Velit mattis ipsum turpis pellentesque. Libero commodo at arcu vivamus at pretium, malesuada. Etiam urna eget dui varius eu nec interdum elementum ac. Turpis sit ipsum amet, sed adipiscing quis. Egestas a nec, nec enim. Vitae sodales nec nisi quis ac eu ipsum. Euismod aliquam faucibus euismod mauris enim mi sapien tellus. Tincidunt a, cursus est diam orci. Vitae adipiscing consectetur tempus viverra pretium cursus scelerisque metus. Massa sit amet quis egestas mauris malesuada turpis purus. Convallis consectetur odio aliquet tortor placerat elementum. Urna aliquam lacus metus mauris, lobortis ornare sed ornare. Lorem ultricies ac dignissim lorem a, a. Velit urna, consectetur adipiscing lacus posuere egestas. Tincidunt gravida vestibulum suspendisse leo a, turpis feugiat gravida amet.</h1>
+                </div>
+                <div class="rc rc-image">
+                    <img src="https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg">
+                </div>
+            </div>
+            <div class="row-col" id="low">
+                <div class="parallax column" id="left">
+                    <img src="https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" id="p1" alt="Yoda">
+                    <img src="https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" id="p2" alt="Yoda">
+                </div>
+                <div class="usual column" id="center">
+                    <span>Title</span>
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A eget justo diam sit diam malesuada dignissim. Volutpat, facilisis posuere at quis eleifend facilisi porttitor. Leo laoreet ipsum vitae nulla dolor nec blandit metus. Nulla in enim nibh turpis quis ut. Mattis tincidunt volutpat sagittis ultricies vitae feugiat vulputate sit. Ipsum dolor netus praesent tincidunt. Aliquam quis nec, risus amet. Rhoncus pharetra arcu mattis sit auctor et in. Velit mattis ipsum turpis pellentesque. Libero commodo at arcu vivamus at pretium, malesuada. Etiam urna eget dui varius eu nec interdum elementum ac. Turpis sit ipsum amet, sed adipiscing quis. Egestas a nec, nec enim. Vitae sodales nec nisi quis ac eu ipsum. Euismod aliquam faucibus euismod mauris enim mi sapien tellus. Tincidunt a, cursus est diam orci. Vitae adipiscing consectetur tempus viverra pretium cursus scelerisque metus. Massa sit amet quis egestas mauris malesuada turpis purus. Convallis consectetur odio aliquet tortor placerat elementum. Urna aliquam lacus metus mauris, lobortis ornare sed ornare. Lorem ultricies ac dignissim lorem a, a. Velit urna, consectetur adipiscing lacus posuere egestas. Tincidunt gravida vestibulum suspendisse leo a, turpis feugiat gravida amet.</h1>
+                    <img src="https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg">
+
+                    <span>Title</span>
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A eget justo diam sit diam malesuada dignissim. Volutpat, facilisis posuere at quis eleifend facilisi porttitor. Leo laoreet ipsum vitae nulla dolor nec blandit metus. Nulla in enim nibh turpis quis ut. Mattis tincidunt volutpat sagittis ultricies vitae feugiat vulputate sit. Ipsum dolor netus praesent tincidunt. Aliquam quis nec, risus amet. Rhoncus pharetra arcu mattis sit auctor et in. Velit mattis ipsum turpis pellentesque. Libero commodo at arcu vivamus at pretium, malesuada. Etiam urna eget dui varius eu nec interdum elementum ac. Turpis sit ipsum amet, sed adipiscing quis. Egestas a nec, nec enim. Vitae sodales nec nisi quis ac eu ipsum. Euismod aliquam faucibus euismod mauris enim mi sapien tellus. Tincidunt a, cursus est diam orci. Vitae adipiscing consectetur tempus viverra pretium cursus scelerisque metus. Massa sit amet quis egestas mauris malesuada turpis purus. Convallis consectetur odio aliquet tortor placerat elementum. Urna aliquam lacus metus mauris, lobortis ornare sed ornare. Lorem ultricies ac dignissim lorem a, a. Velit urna, consectetur adipiscing lacus posuere egestas. Tincidunt gravida vestibulum suspendisse leo a, turpis feugiat gravida amet.</h1>
+                    <img src="https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg">
+                </div>
+                <div class="parallax column" id="right">
+                    <img src="https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" id="p3" alt="Yoda">
+                    <img src="https://miro.medium.com/max/1400/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg" id="p4" alt="Yoda">
+                </div>
+                <footer class="main_footer">
+                <div class="tablet footer-column" id="one">
+                    <h1 id="footer-title">The Price <span id="independence">of Independence</span></h1>
+                    <button class="donate-btn" id="footer-donate"><i class="fa fa-money-bill" id="money-icon"></i><h6>Donate</h6></button>
+                </div>
+                <div class="tablet two">
+                    <div class="tblt footer-column" id="two">
+                        <div class="footer-cities">
+                            {% for grid_element in grid_elements %}
+                            <div class="main-footer-city" id="footer-city-item{{ grid_elements.index(grid_element) }}" onclick="gridItemClick({{ grid_elements.index(grid_element) }})">
+                                {{ grid_element['city'] }}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="tblt footer-column" id="three">
+                        <div class="write-to" id="creator">
+                            Write to creators <span id="send-arrow">-></span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='js/donate/donate.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/footer.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/header.js') }}"></script>
+</body>

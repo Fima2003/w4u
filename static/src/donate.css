@@ -1,0 +1,524 @@
+*{
+    font: normal 100% "Barlow Condensed", sans-serif;
+    background-color: #181818;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* START OF HEADER */
+.header{
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1{
+    position: absolute;
+    left: 2.79524%;
+    margin: 0;
+    padding: 0;
+    /*font-size: 4em;*/
+    line-height: 1;
+    width: fit-content;
+    max-width: 60%;
+    font-style: normal;
+    font-weight: 700;
+
+    color: #005CE7;
+    background-color: transparent;
+}
+
+#independence{
+    color: #ebd260;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+}
+/* END OF HEADER */
+
+.primary{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 5.60215%;
+    padding-bottom: 8.90322%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+}
+
+.help-text{
+    position: relative;
+    text-align: left;
+    background-color: transparent;
+    color: #181818;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2.7956%;
+    height: fit-content;
+    width: fit-content;
+}
+
+.credentials{
+    position: static;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.military{
+    /*box-sizing: border-box;*/
+    width: 100%;
+    background-image: url("../DB/army.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    overflow: visible;
+}
+
+.button{
+    background: transparent;
+    border-radius: 32px;
+}
+
+.button img{
+    object-fit: contain;
+    width: 100%;
+    transition: .5s;
+}
+
+.button img:hover{
+    box-shadow: 0 5px 24px rgba(0, 0, 0, 1);
+}
+
+.help-info{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: fit-content;
+    background-color: #181818;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 300px;
+}
+
+.col{
+    float: top;
+    height: fit-content;
+}
+
+.almost-header{
+    background-color: #181818;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.almost-header h1 {
+    left: 2%;
+    margin: 0;
+    padding: 0;
+
+    line-height: 1;
+    background-color: #181818;
+    font-weight: 700;
+
+    color: #FFFFFF;
+    width: 96%;
+    border-bottom: #FFFFFF 1px solid;
+}
+
+.row-col{
+    float: top;
+    width: 100%;
+}
+
+.row-col::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-col h6{
+    position: relative;
+    left: 5%;
+    font-weight: 800;
+    color: #FFFFFF;
+    font-size: 2rem;
+    line-height: 38px;
+    margin: 0;
+}
+
+.rc-text h6::after{
+    content:"\000A";
+    white-space: pre;
+}
+
+.rc{
+    background-color: #181818;
+    z-index: 1;
+}
+
+.rc-text {
+    padding: 0 5% 2% 5%;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1;
+    overflow: scroll;
+}
+
+.rc-text h1{
+    margin: 0;
+}
+
+.rc-image img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#low{
+    background-color: transparent;
+    height: fit-content;
+}
+
+/*.column{*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*    height: 100%;*/
+/*    background-color: #181818;*/
+/*}*/
+
+#left{
+    position: relative;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #181818;
+}
+
+#p1{
+    position: absolute;
+    object-fit: contain;
+    top: 30%;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    background: #C4C4C4;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    transform: rotate(30deg);
+}
+
+#p2{
+    position: absolute;
+    top: 70%;
+    object-fit: contain;
+    width: 80%;
+    height: fit-content;
+    left: 15%;
+    margin: 0;
+    padding: 0;
+    background: #C4C4C4;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    transform: rotate(-15deg);
+    /*z-index: -1;*/
+}
+
+#center{
+    top: 0;
+    height: fit-content;
+    color: #FFFFFF;
+    background-color: transparent;
+    z-index: 1;
+}
+
+#center h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 150%;
+    background-color: transparent;
+    padding-bottom: 5%;
+}
+
+#center img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 5%;
+}
+
+#center span{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+#right{
+    position: relative;
+    width: 20%;
+    height: 50%;
+    z-index: 1;
+}
+
+#p3{
+    position: absolute;
+    object-fit: contain;
+    top: 50%;
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    background: #C4C4C4;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    transform: rotate(-30deg);
+}
+
+#p4 {
+    position: absolute;
+    object-fit: contain;
+    width: 80%;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    background: #C4C4C4;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    transform: rotate(5deg);
+}
+
+.donate-btn{
+    display: none;
+}
+
+#money-icon{
+    color: #FFFFFF;
+}
+
+.main_footer{
+    border-top: white 1px solid;
+}
+
+.main-footer-city{
+    color: white;
+}
+
+.write-to{
+    color: white;
+}
+
+#independence{
+    color: #F9D949;
+}
+
+@media screen and (min-width: 280px) {
+    body{
+        overflow-x: hidden;
+    }
+    .header{
+        height: 10%;
+    }
+    .header h1{
+        font-size: 1.5em;
+    }
+    #independence:before {
+        content: "\000A";
+        white-space: pre;
+    }
+    .primary{
+        height: 90%;
+        top: 10%;
+    }
+    .help-text{
+        font-size: 4em;
+        line-height: 1;
+        margin-left: 7.2%;
+        margin-right: 7.2%;
+    }
+    .military{
+        height: 100%;
+    }
+    .button{
+        margin-left: 5%;
+        width: 90%;
+        height: 95%;
+    }
+    .button img{
+        border-radius: 1em;
+        height: 100%;
+    }
+    .almost-header{
+        height: 15%;
+    }
+    .almost-header h1{
+        font-size: 4em;
+    }
+    .col{
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+    .rc{
+        float: top;
+    }
+    .rc-text{
+        width: 100%;
+    }
+    .rc-image{
+        width: 100%;
+        padding: 5% 5% 2% 5%;
+    }
+    .column{
+        float: none;
+    }
+    #left{
+        visibility: collapse;
+    }
+    #center{
+        padding: 5%;
+        width: 100%;
+    }
+    #right{
+        visibility: collapse;
+    }
+    #p1{
+        visibility: hidden;
+    }
+    #p2{
+        visibility: hidden;
+    }
+    #p3{
+        visibility: hidden;
+    }
+    #p4{
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header{
+        height: 15%;
+    }
+    .header h1{
+        font-size: 4em;
+    }
+    #independence:before {
+        content: "";
+    }
+    .primary{
+        height: 85%;
+        top: 15%;
+    }
+    .help-text{
+        font-size: 7.5em;
+        line-height: 1;
+        margin-left: 2.7777%;
+    }
+    .military{
+        height: 100%;
+    }
+    .button{
+        width: 65%;
+        height: 100%;
+    }
+    .button img{
+        border-radius: 2em;
+        height: 100%;
+    }
+    .almost-header{
+        height: 20%;
+    }
+    .almost-header h1{
+        font-size: 7.5em;
+    }
+    .rc{
+        float: left;
+    }
+    .rc-text{
+        width: 50%;
+        height: 100%;
+    }
+    .rc-image{
+        width: 50%;
+        height: 100%;
+        padding: 0 5% 2% 5%;
+    }
+    .column{
+        display: table-cell;
+    }
+    #left{
+        visibility: visible;
+    }
+    #center{
+        padding: 0;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        width: 60%;
+    }
+    #right{
+        visibility: visible;
+    }
+    #p1{
+        visibility: visible;
+    }
+    #p2{
+        visibility: visible;
+    }
+    #p3{
+        visibility: visible;
+    }
+    #p4{
+        visibility: visible;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    body{
+        overflow-x: hidden;
+    }
+    .button{
+        width: 45%;
+        height: 100%;
+    }
+}

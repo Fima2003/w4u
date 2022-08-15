@@ -1,0 +1,54 @@
+.donate-btn{
+
+    width: fit-content;
+    height: fit-content;
+
+    background-color: transparent;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.donate-btn h6{
+    position: static;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1;
+    margin: 0;
+    left: 30%;
+}
+
+#money-icon{
+    position: static;
+    font-size: 2em;
+}
+
+.donate-btn:hover{
+    box-shadow: grey 0 5px 16px, grey 0 -5px 16px, grey 5px 0 16px, grey -5px 0 16px;
+}
+
+@media screen and (min-width: 280px){
+    .donate-btn{
+        padding: 2% 3%;
+    }
+    .donate-btn h6{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .donate-btn{
+        padding: 14px 42px;
+    }
+    .donate-btn h6{
+        display: inline;
+        margin-left: 10px;
+    }
+}

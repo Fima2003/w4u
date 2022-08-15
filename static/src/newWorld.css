@@ -1,0 +1,96 @@
+.output_canvas {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position:absolute;
+    z-index: 1;
+    bottom:4%;
+    left:2%;
+    width:25%;
+    height:25%;
+    border: #FFFFFF 2px solid;
+    box-shadow: -5px 5px 8px;
+}
+
+.main_canvas{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position:absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 25px;
+}
+
+.btn {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    background: linear-gradient(to right, black 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1s ease-out;
+}
+
+.btn .fa{
+    transition: all 1s ease-out;
+    color: black;
+}
+
+.btn .fas{
+    transition: all 1s ease-out;
+    color: black;
+}
+
+.btn:hover{
+    background-position: left bottom;
+}
+
+.btn:hover .fa{
+    transition: all 1s ease-out;
+    color: white;
+}
+
+.btn:hover .fas{
+    transition: all 1s ease-out;
+    color: white;
+}
+
+i{
+    font-size: 20px;
+}
+
+#donate{
+    bottom: 5%;
+    left: 90%;
+}
+
+#share{
+    bottom: 15%;
+    left: 90%;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
